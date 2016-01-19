@@ -15,6 +15,11 @@
 		9F0825B41BDDDE7400DA1D84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0825B21BDDDE7400DA1D84 /* LaunchScreen.storyboard */; };
 		9F0825BF1BDDDE7400DA1D84 /* carTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0825BE1BDDDE7400DA1D84 /* carTests.swift */; };
 		9F0825CA1BDDDE7400DA1D84 /* carUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0825C91BDDDE7400DA1D84 /* carUITests.swift */; };
+		9F998E521BED7F74007A1C6E /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F998E4F1BED7F74007A1C6E /* GCDAsyncUdpSocket.m */; };
+		9F998E541BED7F74007A1C6E /* SCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F998E511BED7F74007A1C6E /* SCMessage.swift */; };
+		9F998E581BED8052007A1C6E /* SCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F998E571BED8052007A1C6E /* SCClient.swift */; };
+		9F998E6F1BEE57BB007A1C6E /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F998E6A1BEE57A0007A1C6E /* Charts.framework */; };
+		9F998E701BEE57BB007A1C6E /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F998E6A1BEE57A0007A1C6E /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +37,49 @@
 			remoteGlobalIDString = 9F0825A31BDDDE7400DA1D84;
 			remoteInfo = car;
 		};
+		9F998E691BEE57A0007A1C6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F998E631BEE57A0007A1C6E /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		9F998E6B1BEE57A0007A1C6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F998E631BEE57A0007A1C6E /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		9F998E6D1BEE57A0007A1C6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F998E631BEE57A0007A1C6E /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		9F998E711BEE57BB007A1C6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F998E631BEE57A0007A1C6E /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F998E731BEE57BB007A1C6E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F998E701BEE57BB007A1C6E /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9F0825A41BDDDE7400DA1D84 /* car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = car.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +96,12 @@
 		9F0825C51BDDDE7400DA1D84 /* carUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0825C91BDDDE7400DA1D84 /* carUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carUITests.swift; sourceTree = "<group>"; };
 		9F0825CB1BDDDE7400DA1D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F998E4D1BED7F74007A1C6E /* car-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "car-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F998E4E1BED7F74007A1C6E /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		9F998E4F1BED7F74007A1C6E /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		9F998E511BED7F74007A1C6E /* SCMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMessage.swift; sourceTree = "<group>"; };
+		9F998E571BED8052007A1C6E /* SCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCClient.swift; sourceTree = "<group>"; };
+		9F998E631BEE57A0007A1C6E /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F998E6F1BEE57BB007A1C6E /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +159,9 @@
 				9F0825AD1BDDDE7400DA1D84 /* Main.storyboard */,
 				9F0825B01BDDDE7400DA1D84 /* Assets.xcassets */,
 				9F0825B21BDDDE7400DA1D84 /* LaunchScreen.storyboard */,
+				9F998E4C1BED7F74007A1C6E /* SwiftCoAP Library */,
 				9F0825B51BDDDE7400DA1D84 /* Info.plist */,
+				9F998E631BEE57A0007A1C6E /* Charts.xcodeproj */,
 			);
 			path = car;
 			sourceTree = "<group>";
@@ -128,6 +184,28 @@
 			path = carUITests;
 			sourceTree = "<group>";
 		};
+		9F998E4C1BED7F74007A1C6E /* SwiftCoAP Library */ = {
+			isa = PBXGroup;
+			children = (
+				9F998E4D1BED7F74007A1C6E /* car-Bridging-Header.h */,
+				9F998E4E1BED7F74007A1C6E /* GCDAsyncUdpSocket.h */,
+				9F998E571BED8052007A1C6E /* SCClient.swift */,
+				9F998E4F1BED7F74007A1C6E /* GCDAsyncUdpSocket.m */,
+				9F998E511BED7F74007A1C6E /* SCMessage.swift */,
+			);
+			path = "SwiftCoAP Library";
+			sourceTree = "<group>";
+		};
+		9F998E641BEE57A0007A1C6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F998E6A1BEE57A0007A1C6E /* Charts.framework */,
+				9F998E6C1BEE57A0007A1C6E /* Charts.framework */,
+				9F998E6E1BEE57A0007A1C6E /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +216,12 @@
 				9F0825A01BDDDE7400DA1D84 /* Sources */,
 				9F0825A11BDDDE7400DA1D84 /* Frameworks */,
 				9F0825A21BDDDE7400DA1D84 /* Resources */,
+				9F998E731BEE57BB007A1C6E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9F998E721BEE57BB007A1C6E /* PBXTargetDependency */,
 			);
 			name = car;
 			productName = car;
@@ -196,6 +276,7 @@
 				TargetAttributes = {
 					9F0825A31BDDDE7400DA1D84 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = K7YPPRP2KC;
 					};
 					9F0825B91BDDDE7400DA1D84 = {
 						CreatedOnToolsVersion = 7.1;
@@ -218,6 +299,12 @@
 			mainGroup = 9F08259B1BDDDE7400DA1D84;
 			productRefGroup = 9F0825A51BDDDE7400DA1D84 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9F998E641BEE57A0007A1C6E /* Products */;
+					ProjectRef = 9F998E631BEE57A0007A1C6E /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9F0825A31BDDDE7400DA1D84 /* car */,
@@ -226,6 +313,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9F998E6A1BEE57A0007A1C6E /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 9F998E691BEE57A0007A1C6E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F998E6C1BEE57A0007A1C6E /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 9F998E6B1BEE57A0007A1C6E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F998E6E1BEE57A0007A1C6E /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 9F998E6D1BEE57A0007A1C6E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9F0825A21BDDDE7400DA1D84 /* Resources */ = {
@@ -259,9 +370,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F998E581BED8052007A1C6E /* SCClient.swift in Sources */,
+				9F998E521BED7F74007A1C6E /* GCDAsyncUdpSocket.m in Sources */,
 				9F0825AC1BDDDE7400DA1D84 /* SecondViewController.swift in Sources */,
 				9F0825A81BDDDE7400DA1D84 /* AppDelegate.swift in Sources */,
 				9F0825AA1BDDDE7400DA1D84 /* FirstViewController.swift in Sources */,
+				9F998E541BED7F74007A1C6E /* SCMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +407,11 @@
 			isa = PBXTargetDependency;
 			target = 9F0825A31BDDDE7400DA1D84 /* car */;
 			targetProxy = 9F0825C61BDDDE7400DA1D84 /* PBXContainerItemProxy */;
+		};
+		9F998E721BEE57BB007A1C6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = 9F998E711BEE57BB007A1C6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -403,10 +522,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = car/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Monash.car;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "SwiftCoAP Library/car-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -414,10 +538,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = car/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Monash.car;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -488,6 +616,7 @@
 				9F0825D01BDDDE7400DA1D84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F0825D11BDDDE7400DA1D84 /* Build configuration list for PBXNativeTarget "carTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +625,7 @@
 				9F0825D31BDDDE7400DA1D84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F0825D41BDDDE7400DA1D84 /* Build configuration list for PBXNativeTarget "carUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +634,7 @@
 				9F0825D61BDDDE7400DA1D84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
